@@ -1,0 +1,84 @@
+{
+  "description": "Fixture-only negative scenarios. These intentionally invalid records are not inserted into the baseline SQLite database and must not be treated as analytical data.",
+  "fixtures": [
+    {
+      "anomaly": {
+        "attempted_assignment_id": "ASG-EXP-2026-000001-USR-000001",
+        "attempted_variant_id": "VAR-EXP-2026-000001-A",
+        "audience_member_id": "USR-000001",
+        "existing_assignment_id": "ASG-EXP-2026-000001-USR-000001",
+        "existing_variant_id": "VAR-EXP-2026-000001-B",
+        "experiment_id": "EXP-2026-000001",
+        "violated_invariants": [
+          "one assignment per audience member per experiment",
+          "assignment_id primary key"
+        ]
+      },
+      "label": "user assigned to multiple variants",
+      "scenario_id": "multiple_variant_assignments"
+    },
+    {
+      "anomaly": {
+        "assignment_at": "2026-10-23T11:58:40Z",
+        "assignment_id": "ASG-EXP-2026-000001-USR-000002",
+        "experiment_id": "EXP-2026-000001",
+        "exposure_at": "2026-10-23T11:57:40Z",
+        "scenario_event_id": "SCN-EXPOSURE-BEFORE-ASSIGNMENT-000001",
+        "violated_invariant": "exposure event must not precede assignment"
+      },
+      "label": "exposure timestamp precedes assignment",
+      "scenario_id": "exposure_before_assignment"
+    },
+    {
+      "anomaly": {
+        "fixture_analysis_window_days": 14,
+        "metric_attribution_window_days": 7,
+        "metric_definition_id": "MET-000001",
+        "metric_definition_version": 1,
+        "violated_invariant": "result outcome window must agree with the metric definition"
+      },
+      "label": "analysis window conflicts with metric definition",
+      "scenario_id": "inconsistent_outcome_window"
+    },
+    {
+      "anomaly": {
+        "diagnostic_ignored": true,
+        "experiment_id": "EXP-2026-000001",
+        "fixture_observed_counts": {
+          "A": 3500,
+          "B": 1500
+        },
+        "planned_allocation": {
+          "A": 0.5,
+          "B": 0.5
+        },
+        "srm_diagnostic": "warning",
+        "violated_invariant": "a detected SRM warning must not be marked as passed or ignored"
+      },
+      "label": "sample-ratio mismatch diagnostic ignored",
+      "scenario_id": "ignored_sample_ratio_mismatch"
+    },
+    {
+      "anomaly": {
+        "expected_validation": "the prior result remains bound to metric version 1; the changed definition must be a new version",
+        "later_definition": {
+          "definition_change": "attribution window changed from 7 to 14 days",
+          "effective_at": "2026-11-16T00:00:00Z",
+          "metric_definition_id": "MET-000021",
+          "metric_key": "conversion_rate",
+          "version": 2
+        },
+        "note": "The result snapshot and later version are scenario metadata, not rows inserted into the baseline database.",
+        "result_snapshot": {
+          "computed_at": "2026-11-15T00:00:00Z",
+          "fixture_result_id": "FIXTURE-RESULT-000001",
+          "metric_definition_id": "MET-000001",
+          "metric_definition_version": 1
+        }
+      },
+      "fixture_only": true,
+      "label": "metric definition changed after result snapshot",
+      "scenario_id": "metric_definition_changed_after_results"
+    }
+  ]
+}

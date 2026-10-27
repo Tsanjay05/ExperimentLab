@@ -1,0 +1,200 @@
+{
+  "description": "Validation-only simulation truth. Never use these labels or values as analytical input features.",
+  "experiments": [
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.0907820454322167,
+      "control_guardrail_event_probability": 0.019125422488178247,
+      "experiment_id": "EXP-2026-000001",
+      "exposure_events_logged": 4415,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": true
+      },
+      "members_not_reached": 349,
+      "members_reached": 4651,
+      "metric_definition_id": "MET-000001",
+      "reached_members_missing_exposure_telemetry": 236,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": 0.02,
+      "true_intention_to_treat_effect_in_window": 0.014880000000000003
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.11558908541646201,
+      "control_guardrail_event_probability": 0.01876279420772824,
+      "experiment_id": "EXP-2026-000002",
+      "exposure_events_logged": 4441,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": false
+      },
+      "members_not_reached": 323,
+      "members_reached": 4677,
+      "metric_definition_id": "MET-000003",
+      "reached_members_missing_exposure_telemetry": 236,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": 0.0,
+      "true_intention_to_treat_effect_in_window": 0.0
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.12003060959436948,
+      "control_guardrail_event_probability": 0.0283709957979632,
+      "experiment_id": "EXP-2026-000003",
+      "exposure_events_logged": 4471,
+      "ground_truth_labels": {
+        "has_guardrail_regression": true,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": true
+      },
+      "members_not_reached": 318,
+      "members_reached": 4682,
+      "metric_definition_id": "MET-000005",
+      "reached_members_missing_exposure_telemetry": 211,
+      "treatment_guardrail_regression_on_exposed": 0.012,
+      "treatment_on_treated_effect": 0.015,
+      "true_intention_to_treat_effect_in_window": 0.011160000000000002
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.08774060340936442,
+      "control_guardrail_event_probability": 0.026632681939313067,
+      "experiment_id": "EXP-2026-000004",
+      "exposure_events_logged": 4433,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": true,
+        "has_positive_treatment_effect": false
+      },
+      "members_not_reached": 337,
+      "members_reached": 4663,
+      "metric_definition_id": "MET-000007",
+      "reached_members_missing_exposure_telemetry": 230,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": -0.01,
+      "true_intention_to_treat_effect_in_window": -0.007440000000000001
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.14937068346107407,
+      "control_guardrail_event_probability": 0.034184199341131954,
+      "experiment_id": "EXP-2026-000005",
+      "exposure_events_logged": 4438,
+      "ground_truth_labels": {
+        "has_guardrail_regression": true,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": true
+      },
+      "members_not_reached": 341,
+      "members_reached": 4659,
+      "metric_definition_id": "MET-000009",
+      "reached_members_missing_exposure_telemetry": 221,
+      "treatment_guardrail_regression_on_exposed": 0.018,
+      "treatment_on_treated_effect": 0.025,
+      "true_intention_to_treat_effect_in_window": 0.018600000000000002
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.1477529248903432,
+      "control_guardrail_event_probability": 0.01844478098865795,
+      "experiment_id": "EXP-2026-000006",
+      "exposure_events_logged": 4448,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": false
+      },
+      "members_not_reached": 341,
+      "members_reached": 4659,
+      "metric_definition_id": "MET-000011",
+      "reached_members_missing_exposure_telemetry": 211,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": 0.0,
+      "true_intention_to_treat_effect_in_window": 0.0
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.12902456507798504,
+      "control_guardrail_event_probability": 0.025761788484593807,
+      "experiment_id": "EXP-2026-000007",
+      "exposure_events_logged": 4387,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": true
+      },
+      "members_not_reached": 360,
+      "members_reached": 4640,
+      "metric_definition_id": "MET-000013",
+      "reached_members_missing_exposure_telemetry": 253,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": 0.018,
+      "true_intention_to_treat_effect_in_window": 0.013392
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.10834639848354474,
+      "control_guardrail_event_probability": 0.0226987550448735,
+      "experiment_id": "EXP-2026-000008",
+      "exposure_events_logged": 4403,
+      "ground_truth_labels": {
+        "has_guardrail_regression": true,
+        "has_negative_treatment_effect": true,
+        "has_positive_treatment_effect": false
+      },
+      "members_not_reached": 353,
+      "members_reached": 4647,
+      "metric_definition_id": "MET-000015",
+      "reached_members_missing_exposure_telemetry": 244,
+      "treatment_guardrail_regression_on_exposed": 0.015,
+      "treatment_on_treated_effect": -0.015,
+      "true_intention_to_treat_effect_in_window": -0.011160000000000002
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.14309219195361222,
+      "control_guardrail_event_probability": 0.023337392151063625,
+      "experiment_id": "EXP-2026-000009",
+      "exposure_events_logged": 4431,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": true
+      },
+      "members_not_reached": 343,
+      "members_reached": 4657,
+      "metric_definition_id": "MET-000017",
+      "reached_members_missing_exposure_telemetry": 226,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": 0.01,
+      "true_intention_to_treat_effect_in_window": 0.007440000000000001
+    },
+    {
+      "assigned_members": 5000,
+      "control_conversion_probability_before_window_censoring": 0.08403253897669422,
+      "control_guardrail_event_probability": 0.02781064429664848,
+      "experiment_id": "EXP-2026-000010",
+      "exposure_events_logged": 4406,
+      "ground_truth_labels": {
+        "has_guardrail_regression": false,
+        "has_negative_treatment_effect": false,
+        "has_positive_treatment_effect": false
+      },
+      "members_not_reached": 353,
+      "members_reached": 4647,
+      "metric_definition_id": "MET-000019",
+      "reached_members_missing_exposure_telemetry": 241,
+      "treatment_guardrail_regression_on_exposed": 0.0,
+      "treatment_on_treated_effect": 0.0,
+      "true_intention_to_treat_effect_in_window": 0.0
+    }
+  ],
+  "exposure_reach_probability": 0.93,
+  "exposure_telemetry_probability_given_reach": 0.95,
+  "late_conversion_probability": 0.2,
+  "outcome_window_days": 7,
+  "seed": 20261022
+}
