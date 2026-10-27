@@ -141,19 +141,24 @@ See [docs/data_dictionary.md](docs/data_dictionary.md) for field definitions and
 [docs/validation_summary.md](docs/validation_summary.md) for scenario and validation
 behavior.
 
-## Submission to GitHub
+## Repository
 
-After confirming `git status` contains only files intended for submission, create
-and push a new public repository with GitHub CLI:
+The project source code, tests, synthetic ground-truth fixtures, and documentation are available in the public GitHub repository:
+
+**[ExperimentLab — GitHub Repository](https://github.com/Tsanjay05/ExperimentLab)**
+
+To check the local repository status:
 
 ```powershell
-git init -b main
-git add -A
-git commit -m "Initial ExperimentLab submission" -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
-gh repo create experimentlab-assignment --public --source=. --remote=origin --push
+git status
 ```
 
-This requires GitHub CLI (`gh`) to be installed and authenticated, and the repository
-name `experimentlab-assignment` to be available under the authenticated account.
-The `gh repo create` command creates the public repository, configures `origin`, and
-pushes the `main` branch.
+To publish subsequent changes:
+
+```powershell
+git add -A
+git commit -m "Describe your changes"
+git push
+```
+
+Do not commit the local virtual environment, generated SQLite database, or other ignored development artifacts.
